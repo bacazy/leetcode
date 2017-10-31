@@ -14,8 +14,8 @@ return [0, 1].
 
 ### 解决方案：
 A: 暴力求解log(n^2)
-B:
-···java
+B: 将已访问过的元素保存在哈希表中，避免二次访问
+```java
 import java.util.HashMap;
 import java.util.Map;
 
@@ -33,4 +33,5 @@ public class TwoSum {
     }
 }
 ```
+![](res/p1-1.png)
 
