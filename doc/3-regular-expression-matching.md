@@ -19,3 +19,6 @@ isMatch("aa", ".*") → true
 isMatch("ab", ".*") → true
 isMatch("aab", "c*a*b") → true
 ```
+### 解决方案
+
+正则表达式
