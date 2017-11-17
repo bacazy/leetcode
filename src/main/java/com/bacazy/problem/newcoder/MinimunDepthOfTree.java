@@ -13,27 +13,17 @@ import java.util.List;
  * }
  */
 public class MinimunDepthOfTree {
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
-
     public int run(TreeNode root) {
         if (root == null){
             return 0;
         }
         int depth = 0;
-        List<TreeNode> current = new ArrayList<>();
+        List<TreeNode> current = new ArrayList<TreeNode>();
         List<TreeNode> next = null;
         current.add(root);
         depth++;
         while (current.size() > 0){
-            next = new ArrayList<>();
+            next = new ArrayList<TreeNode>();
             for (TreeNode node:current){
                 if (node.left == null && node.right == null){
                     return depth;
@@ -50,5 +40,15 @@ public class MinimunDepthOfTree {
         }
 
         return depth;
+    }
+
+    class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
     }
 }
