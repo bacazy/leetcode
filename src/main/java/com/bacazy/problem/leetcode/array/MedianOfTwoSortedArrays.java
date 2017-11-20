@@ -13,6 +13,7 @@ package com.bacazy.problem.leetcode.array;
  * nums2 = [3, 4] <br>t
  * the median is (2 + 3)/2 = 2.5
  */
+
 public class MedianOfTwoSortedArrays {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int M = nums1.length;
@@ -38,6 +39,7 @@ public class MedianOfTwoSortedArrays {
                 hi2= mid2;
                 lo1 = mid1;
             }
+            return 0;
         }
 
         return 0;
